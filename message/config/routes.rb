@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'a_messages/index'
+  # get 'a_messages/index'
+  resources :a_messages
 
   # resources :messages, only: %i(index)
   # The priority is based upon order of creation: first created -> highest priority.
