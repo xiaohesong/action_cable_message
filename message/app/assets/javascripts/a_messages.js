@@ -11,7 +11,8 @@ $(function(){
     var body = data.message.body
     var created_at = data.message.created_at
     var uid  = "uid";
-    var html += "<li class='messages-list-item'><div class='messages-list-item-name'>"
+    var html = ""
+        html += "<li class='messages-list-item'><div class='messages-list-item-name'>"
         html += uid
         html += "</div>"
         html += "<div class='messages-list-item-body'>"
