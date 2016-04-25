@@ -1,7 +1,5 @@
 class AMessagesController < ApplicationController
   def index
-    # binding.pry
-    @message = AMessage.new()
     @current_messages = AMessage.all
   end
 

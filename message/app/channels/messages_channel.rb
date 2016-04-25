@@ -1,11 +1,12 @@
 class MessagesChannel < ApplicationCable::Channel
   def subscribed
-    stream_from "messages"
+    stream_from "a_messages"
   end
 
   def send_message(data)
+    puts "++++++++++++++++++++++++=cacaca"
     message = AMessage.create(body: data['body'])
-    ActionCable.server.broadcast 'messages', { message: message,
+    ActionCable.server.broadcast 'a_messages', { message: message,
                                                user: current_user }
   end
 end

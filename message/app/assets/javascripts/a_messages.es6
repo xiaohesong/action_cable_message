@@ -2,7 +2,6 @@ $(function() {
   $('#message-form').submit(function(event) {
     event.preventDefault();
     let $messageBody = $(this).find("textarea[name='message[body]']")
-    console.log($messageBody.val());
     Remote.messaging.sendMessage($messageBody.val());
     $messageBody.val(null);
   });
