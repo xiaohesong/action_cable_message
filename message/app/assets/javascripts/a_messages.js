@@ -10,7 +10,6 @@ $(function(){
   $(Remote.messaging).on('received', function(event, data) {
     var body = data.message.body
     var created_at = data.message.created_at
-    // var { body: body, created_at: createdAt } = data.message;
     var uid  = "uid";
     var html += "<li class='messages-list-item'><div class='messages-list-item-name'>"
         html += uid
