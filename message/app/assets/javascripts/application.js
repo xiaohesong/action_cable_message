@@ -13,5 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require cable
-//= require ./remote
-//= require ./a_messages
+//= require remote
+//= require a_messages

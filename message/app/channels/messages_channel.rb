@@ -4,7 +4,6 @@ class MessagesChannel < ApplicationCable::Channel
   end
 
   def send_message(data)
-    puts "++++++++++++++++++++++++=cacaca"
     message = AMessage.create(body: data['body'])
     ActionCable.server.broadcast 'a_messages', { message: message,
                                                user: current_user }

@@ -1,6 +1,6 @@
 class AMessagesController < ApplicationController
   def index
-    @current_messages = AMessage.all
+    @current_messages = AMessage.all.order(created_at: :desc).limit(5)
   end
 
   # def create
